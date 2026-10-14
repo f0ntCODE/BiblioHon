@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:LibraryDesktopSystem.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800"
+        x:Class="LibraryDesktopSystem.Views.BookView"
+        x:DataType="vm:BookViewModel"
+        Title="Register new book">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:BookViewModel />
+    </Design.DataContext>
+
+    <StackPanel Margin="20" 
+    Spacing="10"
+    HorizontalAlignment="Center">
+
+        <TextBlock Text= "Register book"
+                   FontSize="24"
+                   FontWeight="Bold"/>
+
+        <TextBlock Text="type book's name" />
+        <TextBox Text="{Binding BookName}" />
+        <TextBlock Text="Type book's author"/>
+        <TextBox Text="{Binding Author}" />
+        <TextBlock Text="Type book's publisher"/>
+        <TextBox Text="{Binding Publisher}" />
+        <TextBlock Text="Type book's ISBN"/>
+        <TextBox Text="{Binding Isbn}" />
+        <TextBlock Text="Type book's publication year"/>
+        <TextBox Text="{Binding PublicationYear}" />
+        <TextBlock Text="Type book's genre"/>
+        <TextBox Text="{Binding Genre}" />
+
+        <Button Content="Register"
+                Command="{Binding RegisterBookCommand}" />
+        <Button Content="List Books"
+                Command="{Binding ListBooksCommand}"/>
+
+
+
+    </StackPanel>
+</Window>

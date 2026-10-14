@@ -1,6 +1,6 @@
 using System;
 
-namespace LibraryDesktopSystem.Models;
+namespace BiblioHon.Models;
 
 public class Book
 {

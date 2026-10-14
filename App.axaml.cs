@@ -1,10 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using LibraryDesktopSystem.ViewModels;
-using LibraryDesktopSystem.Views;
+using BiblioHon.ViewModels;
+using BiblioHon.Views;
 
-namespace LibraryDesktopSystem;
+namespace BiblioHon;
 
 public partial class App : Application
 {

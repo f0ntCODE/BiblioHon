@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace LibraryDesktopSystem;
+namespace BiblioHon;
 
 sealed class Program
 {

@@ -1,10 +1,10 @@
 using System;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using LibraryDesktopSystem.Models;
-using LibraryDesktopSystem.Services;
+using BiblioHon.Models;
+using BiblioHon.Services;
 
-namespace LibraryDesktopSystem.ViewModels;
+namespace BiblioHon.ViewModels;
 
 public partial class BookViewModel : ObservableObject
 {

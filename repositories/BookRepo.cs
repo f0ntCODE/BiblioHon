@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using LibraryDesktopSystem.Models;
+using BiblioHon.Models;
 
-namespace LibraryDesktopSystem.repositories;
+namespace BiblioHon.repositories;
 
 public class BookRepo
 {

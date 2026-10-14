@@ -90,3 +90,13 @@
 /home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/LibraryDesktopSystem/obj/Debug/net10.0/LibraryDesktopSystem.pdb
 /home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/LibraryDesktopSystem/obj/Debug/net10.0/LibraryDesktopSystem.genruntimeconfig.cache
 /home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/LibraryDesktopSystem/obj/Debug/net10.0/ref/LibraryDesktopSystem.dll
+/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/obj/Debug/net10.0/LibraryDesktopSystem.csproj.AssemblyReference.cache
+/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/obj/Debug/net10.0/Avalonia/Resources.Inputs.cache
+/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/obj/Debug/net10.0/Avalonia/resources
+/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/obj/Debug/net10.0/LibraryDesktopSystem.GeneratedMSBuildEditorConfig.editorconfig
+/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/obj/Debug/net10.0/LibraryDesktopSystem.AssemblyInfoInputs.cache
+/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/obj/Debug/net10.0/LibraryDesktopSystem.AssemblyInfo.cs
+/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/obj/Debug/net10.0/LibraryDesktopSystem.csproj.CoreCompileInputs.cache
+/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/obj/Debug/net10.0/LibraryDesktopSystem.dll
+/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/obj/Debug/net10.0/refint/LibraryDesktopSystem.dll
+/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/obj/Debug/net10.0/LibraryDesktopSystem.pdb

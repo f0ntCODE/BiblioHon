@@ -1,8 +1,8 @@
 using Avalonia.Controls;
-using LibraryDesktopSystem.Services;
-using LibraryDesktopSystem.ViewModels;
+using BiblioHon.Services;
+using BiblioHon.ViewModels;
 
-namespace LibraryDesktopSystem.Views;
+namespace BiblioHon.Views;
 
 public partial class BookView : Window
 {

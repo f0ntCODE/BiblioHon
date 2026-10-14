@@ -1678,11 +1678,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/LibraryDesktopSystem/LibraryDesktopSystem.csproj",
-      "projectName": "LibraryDesktopSystem",
-      "projectPath": "/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/LibraryDesktopSystem/LibraryDesktopSystem.csproj",
+      "projectUniqueName": "/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/BiblioHon.csproj",
+      "projectName": "BiblioHon",
+      "projectPath": "/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/BiblioHon.csproj",
       "packagesPath": "/home/font/.nuget/packages/",
-      "outputPath": "/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/LibraryDesktopSystem/obj/",
+      "outputPath": "/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/font/.nuget/NuGet/NuGet.Config"

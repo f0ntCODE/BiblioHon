@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4SHaYvNpsVs=",
+  "dgSpecHash": "dxnCJeRC2+4=",
   "success": true,
-  "projectFilePath": "/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/LibraryDesktopSystem/LibraryDesktopSystem.csproj",
+  "projectFilePath": "/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/BiblioHon.csproj",
   "expectedPackageFiles": [
     "/home/font/.nuget/packages/avalonia/12.1.4/avalonia.12.1.4.nupkg.sha512",
     "/home/font/.nuget/packages/avalonia.angle.windows.natives/2.1.27548.20260419/avalonia.angle.windows.natives.2.1.27548.20260419.nupkg.sha512",

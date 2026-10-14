@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using LibraryDesktopSystem.Models;
-using LibraryDesktopSystem.repositories;
+using BiblioHon.Models;
+using BiblioHon.repositories;
 
-namespace LibraryDesktopSystem.Services;
+namespace BiblioHon.Services;
 
 public class BookService
 {

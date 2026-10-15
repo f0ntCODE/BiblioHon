@@ -6,9 +6,9 @@ namespace BiblioHon.Views;
 
 public partial class BookView : Window
 {
-    public BookView()
+    public BookView(BookViewModel viewModel)
     {
         InitializeComponent();
-        DataContext = new BookViewModel();
+        DataContext = viewModel;
     }
 }

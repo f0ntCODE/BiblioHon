@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using BiblioHon.Models;
@@ -30,15 +31,10 @@ public partial class BookViewModel : ObservableObject
     private int? _publicationYear;
     
 
-    public BookViewModel()
-    {
-        
-        _bookService = new BookService();
-
-    }
+    public BookViewModel(BookService bookService) => _bookService = bookService;
 
     [RelayCommand]
-    public void RegisterBook()
+    public async Task RegisterBookAsync()
     {
         Book book = new Book(
             BookName,
@@ -49,14 +45,16 @@ public partial class BookViewModel : ObservableObject
             Genre
         );
 
-        _bookService.RegisterNewBook(book);
+        await _bookService.RegisterNewBookAsync(book);
         
     }
 
     [RelayCommand]
-    public void ListBooks()
+    public async Task ListBooksAsync()
     {
-        _bookService.ListAllBooksOnConsole();
+        var books = await _bookService.ListAllBooksAsync();
+        foreach (var book in books)
+            Console.WriteLine(book);
     }
 
 }

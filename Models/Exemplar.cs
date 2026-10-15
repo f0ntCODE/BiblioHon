@@ -1,15 +1,28 @@
 using System;
+using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 
 namespace BiblioHon.Models;
 
 public class Exemplar
 {
 
-    private long? _id {get; set;}
-    private long? _bookId {get; set;}
-    private string _convervationStatus {get; set;} = String.Empty;
-    private string _disponibility {get; set;} = String.Empty;
-    private DateOnly _cadastrationDate {get; set;}
+    public long? Id {get; set;}
+    public long? BookId {get; set;}
+    public string ConvervationStatus {get; set;} = String.Empty;
+    public string Disponibility {get; set;} = String.Empty;
+    public DateOnly CadastrationDate {get; set;}
+
+    public Exemplar(long? id,
+                    string convervationStatus,
+                    string disponibility,
+                    DateOnly cadastrationDate)
+    {
+        this.Id = id;
+        this.ConvervationStatus = convervationStatus;
+        this.Disponibility = disponibility;
+        this.CadastrationDate = cadastrationDate;
+    }
 
 
 }

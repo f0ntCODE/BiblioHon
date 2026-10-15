@@ -15,7 +15,7 @@ public class Book
     public Book(string BookName, 
     string Author,
     string Publisher,
-    int? Isbn,
+    int? ISBN,
     int? PublicationYear,
     string Genre
     )
@@ -23,7 +23,7 @@ public class Book
         _bookName = BookName;
         _author = Author;
         _publisher = Publisher;
-        _ISBN = Isbn;
+        _ISBN = ISBN;
         _publicationYear = PublicationYear;
         _genre = Genre;
         
@@ -32,6 +32,12 @@ public class Book
     {
         get {return _bookName;}
         set {_bookName = value;}
+    }
+
+    public string Publisher
+    {
+        get {return _publisher;}
+        set {_publisher = value;}
     }
 
     public int? ISBN

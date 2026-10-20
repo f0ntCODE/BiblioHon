@@ -9,38 +9,49 @@
         Title="Register new book">
 
     <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:BookViewModel />
+        <vm:BookViewModelExample/>
     </Design.DataContext>
 
-    <StackPanel Margin="20" 
-    Spacing="10"
-    HorizontalAlignment="Center">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+            <StackPanel Margin="20"
+                        Spacing="10"
+                        HorizontalAlignment="Center"
+                        Grid.Column="0">
 
-        <TextBlock Text= "Register book"
-                   FontSize="24"
-                   FontWeight="Bold"/>
+                <TextBlock Text= "Register book"
+                           FontSize="24"
+                           FontWeight="Bold"/>
 
-        <TextBlock Text="type book's name" />
-        <TextBox Text="{Binding BookName}" />
-        <TextBlock Text="Type book's author"/>
-        <TextBox Text="{Binding Author}" />
-        <TextBlock Text="Type book's publisher"/>
-        <TextBox Text="{Binding Publisher}" />
-        <TextBlock Text="Type book's ISBN"/>
-        <TextBox Text="{Binding Isbn}" />
-        <TextBlock Text="Type book's publication year"/>
-        <TextBox Text="{Binding PublicationYear}" />
-        <TextBlock Text="Type book's genre"/>
-        <TextBox Text="{Binding Genre}" />
+                <TextBlock Text="type book's name" />
+                <TextBox Text="{Binding BookName}" />
+                <TextBlock Text="Type book's author"/>
+                <TextBox Text="{Binding Author}" />
+                <TextBlock Text="Type book's publisher"/>
+                <TextBox Text="{Binding Publisher}" />
+                <TextBlock Text="Type book's ISBN"/>
+                <TextBox Text="{Binding Isbn}" />
+                <TextBlock Text="Type book's publication year"/>
+                <TextBox Text="{Binding PublicationYear}" />
+                <TextBlock Text="Type book's genre"/>
+                <TextBox Text="{Binding Genre}" />
 
-        <Button Content="Register"
-                Command="{Binding RegisterBookCommand}" />
-        <Button Content="List Books"
-                Command="{Binding ListBooksCommand}"/>
+                <Button Content="Register"
+                        Command="{Binding RegisterBookCommand}" />
+            </StackPanel>
 
+            <TableView Grid.Column="1" ItemsSource="{Binding Books}">
+                <TableView.Columns>
+                    <TableViewColumn Header="Book name" Binding="{Binding BookName}" />
+                    <TableViewColumn Header="Author" Binding="{Binding Author}" />
+                </TableView.Columns>
 
+            </TableView>
 
-    </StackPanel>
+            
+        
+    </Grid>
 </Window>

@@ -4,11 +4,15 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using BiblioHon.Models;
 using BiblioHon.Services;
+using System.Collections.ObjectModel;
 
 namespace BiblioHon.ViewModels;
 
 public partial class BookViewModel : ObservableObject
 {
+
+    [ObservableProperty]
+    private ObservableCollection<Book> _books = new();
 
     private readonly BookService _bookService;
 
@@ -31,7 +35,10 @@ public partial class BookViewModel : ObservableObject
     private int? _publicationYear;
     
 
-    public BookViewModel(BookService bookService) => _bookService = bookService;
+    public BookViewModel(BookService bookService)
+    {
+      _bookService = bookService;
+    } 
 
     [RelayCommand]
     public async Task RegisterBookAsync()
@@ -45,16 +52,16 @@ public partial class BookViewModel : ObservableObject
             Genre
         );
 
-        await _bookService.RegisterNewBookAsync(book);
-        
+        var savedBook = await _bookService.RegisterNewBookAsync(book);
+        Books.Add(savedBook);
     }
 
-    [RelayCommand]
     public async Task ListBooksAsync()
     {
-        var books = await _bookService.ListAllBooksAsync();
-        foreach (var book in books)
-            Console.WriteLine(book);
+        var bookList = await _bookService.ListAllBooksAsync();
+        Books.Clear();
+        foreach (var book in bookList)
+            Books.Add(book);
     }
 
 }

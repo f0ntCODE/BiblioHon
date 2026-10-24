@@ -10,11 +10,10 @@ namespace BiblioHon.ViewModels;
 
 public partial class BookViewModel : ObservableObject
 {
+    private readonly BookService _bookService;
 
     [ObservableProperty]
     private ObservableCollection<Book> _books = new();
-
-    private readonly BookService _bookService;
 
     [ObservableProperty]
     private string _bookName = string.Empty;
@@ -34,6 +33,8 @@ public partial class BookViewModel : ObservableObject
     [ObservableProperty]
     private int? _publicationYear;
     
+    [ObservableProperty]
+    private bool _isSelected;
 
     public BookViewModel(BookService bookService)
     {

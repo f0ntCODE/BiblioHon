@@ -4452,6 +4452,7 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "Avalonia >= 12.1.4",
+      "Avalonia.Controls.DataGrid >= 12.1.2",
       "Avalonia.Desktop >= 12.1.4",
       "Avalonia.Fonts.Inter >= 12.1.4",
       "Avalonia.Themes.Fluent >= 12.1.4",
@@ -4459,8 +4460,7 @@
       "CommunityToolkit.Mvvm >= 8.4.2",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.13",
       "Microsoft.EntityFrameworkCore.Sqlite >= 10.0.13",
-      "Microsoft.Extensions.DependencyInjection >= 10.0.13",
-      "avalonia.controls.datagrid >= 12.1.2"
+      "Microsoft.Extensions.DependencyInjection >= 10.0.13"
     ]
   },
   "packageFolders": {
@@ -4512,6 +4512,10 @@
             "target": "Package",
             "version": "[12.1.4, )"
           },
+          "Avalonia.Controls.DataGrid": {
+            "target": "Package",
+            "version": "[12.1.2, )"
+          },
           "Avalonia.Desktop": {
             "target": "Package",
             "version": "[12.1.4, )"
@@ -4545,10 +4549,6 @@
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[10.0.13, )"
-          },
-          "avalonia.controls.datagrid": {
-            "target": "Package",
-            "version": "[12.1.2, )"
           }
         },
         "imports": [
@@ -4567,7 +4567,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.402/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.403/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

@@ -1,6 +1,6 @@
 # Banco de dados do Software
-Aqui irei escrever sobre minhas observações quanto à configuração do banco de dados no projeto.
-> OBS: As observações aqui serão escritas de maneira simplificada, sem foco em texto corrido e de maneira informal, para simplificar revisões furutas e fixar o conhecimento mais rapidamente.
+Aqui, irei escrever sobre minhas observações quanto à configuração do banco de dados no projeto.
+> OBS: As observações aqui serão escritas de maneira simplificada, sem foco em texto corrido e de maneira informal, para simplificar revisões futuras e fixar o conhecimento mais rapidamente.
 
 - Banco de dados: SQLite;
   - Por que?: 

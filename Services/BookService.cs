@@ -34,6 +34,6 @@ public class BookService
 
     public Task<bool> UpdateBookAsync(Book book) => _bookRepo.UpdateAsync(book);
 
-    public Task<bool> DeleteBookAsync(long id) => _bookRepo.DeleteAsync(id);
+    public Task<bool> DeleteBookAsync(long? id) => _bookRepo.DeleteAsync(id);
 
 }

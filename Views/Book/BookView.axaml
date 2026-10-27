@@ -12,68 +12,78 @@
         <vm:BookViewModelExample/>
     </Design.DataContext>
 
-    <Grid>
+    <Grid ShowGridLines="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
-            <StackPanel Margin="20"
-                        Spacing="10"
-                        HorizontalAlignment="Center"
-                        Grid.Column="0">
+        <StackPanel Margin="20"
+                    Spacing="10"
+                    HorizontalAlignment="Center"
+                    Grid.Column="0">
 
-                    
-                <TextBlock Text= "Register book"
-                           FontSize="24"
-                           FontWeight="Bold"
-                           Grid.Column="0"/>
 
-                <TextBlock Text="type book's name" />
-                <TextBox Text="{Binding BookName}" />
+            <TextBlock Text= "Register book"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Grid.Column="0"/>
 
-                <TextBlock Text="Type book's author"/>
-                <TextBox Text="{Binding Author}" />
-                
-                <TextBlock Text="Type book's publisher"/>
-                <TextBox Text="{Binding Publisher}" />
-                
-                <TextBlock Text="Type book's ISBN"/>
-                <TextBox Text="{Binding Isbn}" />
-                
-                <TextBlock Text="Type book's publication year"/>
-                <TextBox Text="{Binding PublicationYear}" />
-                
-                <TextBlock Text="Type book's genre"/>
-                <TextBox Text="{Binding Genre}" />
+            <TextBlock Text="type book's name" />
+            <TextBox Text="{Binding BookName}" />
 
-                <Button Content="Register"
-                        Command="{Binding RegisterBookCommand}"/>
-            </StackPanel>
+            <TextBlock Text="Type book's author"/>
+            <TextBox Text="{Binding Author}" />
 
-            <TableView Grid.Column="1" ItemsSource="{Binding Books}" Margin="10">
-                <TableView.Columns>
-                    <TableViewColumn Header="Book name" 
-                    Binding="{Binding BookName}" />
-                    
-                    <TableViewColumn Header="Author" 
-                    Binding="{Binding Author}" />
+            <TextBlock Text="Type book's publisher"/>
+            <TextBox Text="{Binding Publisher}" />
 
-                    <TableViewColumn Header="Action" Width="90">
-                        <TableViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <CheckBox IsChecked="false"
-                                          HorizontalAlignment="Center"
-                                          VerticalAlignment="Center" />   
-                            </DataTemplate>
-                        </TableViewColumn.CellTemplate>
-                    </TableViewColumn>
+            <TextBlock Text="Type book's ISBN"/>
+            <TextBox Text="{Binding Isbn}" />
 
-                </TableView.Columns>
+            <TextBlock Text="Type book's publication year"/>
+            <TextBox Text="{Binding PublicationYear}" />
 
-            </TableView>
+            <TextBlock Text="Type book's genre"/>
+            <TextBox Text="{Binding Genre}" />
 
-            
-        
+            <Button Content="Register"
+                    Command="{Binding RegisterBookCommand}"/>
+        </StackPanel>
+
+        <TableView Grid.Column="1" 
+            ItemsSource="{Binding Books}" 
+            Margin="10">
+            <TableView.Columns>
+                <TableViewColumn Header="Book id"
+                                 Binding="{Binding Id}"
+                                 Width="100"
+                                 HorizontalContentAlignment="Center"
+                                />
+
+                <TableViewColumn Header="Book Name"
+                                 Binding="{Binding BookName}"
+                                 Width="*"
+                                 HorizontalContentAlignment="Center" />
+
+                <TableViewColumn Header="Action" 
+                    Width="*"
+                    HorizontalContentAlignment="Center">
+                    <TableViewColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Left"
+                                        Margin="10">
+                                <Button 
+                                Content="Exclude"
+                                Command="{Binding $parent[Window].DataContext.DeleteBookCommand}"
+                                CommandParameter="{Binding}" />
+                                <Button Content="Edit"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </TableViewColumn.CellTemplate>
+                </TableViewColumn>
+            </TableView.Columns>
+        </TableView>
     </Grid>
 </Window>

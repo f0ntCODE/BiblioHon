@@ -34,7 +34,7 @@ public class BookRepo(BibliohonDbContext context)
         return true;
     }
 
-    public async Task<bool> DeleteAsync(long id)
+    public async Task<bool> DeleteAsync(long? id)
     {
         var book = await context.Books.FindAsync(id);
         if (book is null)

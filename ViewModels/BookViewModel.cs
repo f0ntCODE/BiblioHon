@@ -32,9 +32,6 @@ public partial class BookViewModel : ObservableObject
     
     [ObservableProperty]
     private int? _publicationYear;
-    
-    [ObservableProperty]
-    private bool _isSelected;
 
     public BookViewModel(BookService bookService)
     {
@@ -55,6 +52,19 @@ public partial class BookViewModel : ObservableObject
 
         var savedBook = await _bookService.RegisterNewBookAsync(book);
         Books.Add(savedBook);
+    }
+
+    [RelayCommand]
+    public async Task DeleteBookAsync(Book book)
+    {
+        await _bookService.DeleteBookAsync(book.Id);
+        await ListBooksAsync();
+    }
+
+    [RelayCommand]
+    public async Task EditBookAsync(Book newBookData)
+    {
+        
     }
 
     public async Task ListBooksAsync()

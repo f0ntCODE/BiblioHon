@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -27,7 +28,10 @@ public class BookRepo(BibliohonDbContext context)
     public async Task<bool> UpdateAsync(Book book)
     {
         if (!await context.Books.AnyAsync(existing => existing.Id == book.Id))
+        {
+            Console.WriteLine("None book to update");
             return false;
+        }
 
         context.Books.Update(book);
         await context.SaveChangesAsync();

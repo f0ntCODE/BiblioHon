@@ -1,5 +1,7 @@
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 using BiblioHon.ViewModels;
+using BiblioHon.Views.modals;
 
 namespace BiblioHon.Views;
 
@@ -17,5 +19,10 @@ public partial class BookView : Window
         Opened += async (_, _) => await viewModel.ListBooksAsync();
     }
 
+    private void Edit_Click(object? sender, RoutedEventArgs e)
+    {
+        var editView = new EditBookView();
 
+        
+    }
 }

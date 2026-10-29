@@ -1,0 +1,88 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="570"
+        x:Class="BiblioHon.Views.modals.EditBookView"
+        Title="Edit Book"
+        CanResize="False"
+        WindowStartupLocation="CenterOwner"
+        >
+
+  <Grid ShowGridLines="True"
+        ColumnDefinitions="*">
+
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="5*"/>
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <StackPanel Grid.Row="0"
+                VerticalAlignment="Center">
+
+      <TextBlock
+        Text="Edit Book"
+        TextAlignment="Center"
+        />
+    </StackPanel>
+
+    
+
+    <StackPanel Grid.Row="1"
+                Orientation="Vertical"
+                VerticalAlignment="Top"
+                Margin="10">
+
+      <Label Content="Book Name"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book name" />
+
+      <Label Content="Book Author"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book author" />
+
+      <Label Content="Book Publisher"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book publisher" />
+
+      <Label Content="Book ISBN"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book ISBN" />
+
+      <Label Content="Book publication year"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book publication year" />
+
+      <Label Content="Book genre"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book genre" />
+
+    </StackPanel>
+      
+    <StackPanel Grid.Row="2" 
+      Orientation="Horizontal"
+      Margin="10"
+      HorizontalAlignment="Center">
+      
+      <Grid ShowGridLines="True" Grid.Row="2">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0" 
+              Content="Edit" 
+              Cursor="Hand"
+              HorizontalAlignment="Stretch" />
+
+        <Button Grid.Column="1" 
+              Content="Cancel"
+                HorizontalAlignment="Center" />
+
+      </Grid>
+
+    </StackPanel>
+  </Grid>
+
+</Window>

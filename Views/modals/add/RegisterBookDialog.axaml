@@ -1,0 +1,92 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="using:BiblioHon.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800"
+        x:Class="BiblioHon.Views.modals.add.RegisterBookDialog"
+        x:DataType="vm:BookViewModel"
+        Title="Register a book"
+        CanResize="False"
+        >
+
+        <Grid ShowGridLines="True"
+        ColumnDefinitions="*">
+
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="5*"/>
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <StackPanel Grid.Row="0"
+                VerticalAlignment="Center">
+
+      <TextBlock
+        Text="Register Book"
+        TextAlignment="Center"
+        />
+    </StackPanel>
+
+    <StackPanel Grid.Row="1"
+                Orientation="Vertical"
+                VerticalAlignment="Top"
+                Margin="10">
+
+      <Label Content="Book Name"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book name"
+               Text="{Binding BookName}" />
+
+      <Label Content="Book Author"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book author"
+               Text="{Binding Author}" />
+
+               <!--PAREI AQUI-->
+      <Label Content="Book Publisher"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book publisher" />
+
+      <Label Content="Book ISBN"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book ISBN" />
+
+      <Label Content="Book publication year"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book publication year" />
+
+      <Label Content="Book genre"
+             Margin="0, 5"/>
+      <TextBox PlaceholderText="Type book genre" />
+
+    </StackPanel>
+      
+    <StackPanel Grid.Row="2" 
+      Orientation="Horizontal"
+      Margin="10"
+      Spacing="10">
+      
+  
+        <Button 
+              Content="Confirm" 
+              Cursor="Hand"
+              HorizontalAlignment="Stretch"
+              HorizontalContentAlignment="Center"
+              Padding="10"
+              Background="Green"
+              Foreground="LightGreen" />
+
+        <Button 
+              Content="Close"
+                HorizontalAlignment="Center"
+                Cursor="Hand"
+                Padding="10"
+                Background="DarkRed"
+                Foreground="Red" />
+
+    </StackPanel>
+  </Grid>
+
+
+      </Window>

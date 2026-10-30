@@ -63,24 +63,26 @@
     <StackPanel Grid.Row="2" 
       Orientation="Horizontal"
       Margin="10"
-      HorizontalAlignment="Center">
+      Spacing="10">
       
-      <Grid ShowGridLines="True" Grid.Row="2">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="*" />
-          <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-
-        <Button Grid.Column="0" 
-              Content="Edit" 
+  
+        <Button 
+              Content="Confirm" 
               Cursor="Hand"
-              HorizontalAlignment="Stretch" />
+              HorizontalAlignment="Stretch"
+              HorizontalContentAlignment="Center"
+              Padding="10"
+              Background="Green"
+              Foreground="LightGreen" />
 
-        <Button Grid.Column="1" 
+        <Button 
               Content="Cancel"
-                HorizontalAlignment="Center" />
-
-      </Grid>
+                HorizontalAlignment="Center"
+                Cursor="Hand"
+                Padding="10"
+                Click="Close_Click"
+                Background="DarkRed"
+                Foreground="Red" />
 
     </StackPanel>
   </Grid>

@@ -19,10 +19,9 @@ public partial class BookView : Window
         Opened += async (_, _) => await viewModel.ListBooksAsync();
     }
 
-    private void Edit_Click(object? sender, RoutedEventArgs e)
+    private async void Edit_Click(object? sender, RoutedEventArgs e)
     {
         var editView = new EditBookView();
-
-        
+        await editView.ShowDialog<bool>(this);        
     }
 }

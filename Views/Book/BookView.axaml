@@ -3,13 +3,13 @@
         xmlns:vm="using:BiblioHon.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
         x:Class="BiblioHon.Views.BookView"
         x:DataType="vm:BookViewModel"
         CanResize="True"
         WindowStartupLocation="CenterOwner"
         WindowState="Maximized"
-        Title="Register new book">
+        Title="BiblioHon Book Manager Window">
 
     <Design.DataContext>
         <vm:BookViewModelExample/>
@@ -26,32 +26,12 @@
                     HorizontalAlignment="Center"
                     Grid.Column="0">
 
+                <Button Content="Add new"
+                        />
 
-            <TextBlock Text= "Register book"
-                       FontSize="24"
-                       FontWeight="Bold"
-                       Grid.Column="0"/>
-
-            <TextBlock Text="Book name" />
-            <TextBox Text="{Binding BookName}" />
-
-            <TextBlock Text="Book author"/>
-            <TextBox Text="{Binding Author}" />
-
-            <TextBlock Text="book publisher"/>
-            <TextBox Text="{Binding Publisher}" />
-
-            <TextBlock Text="Book ISBN"/>
-            <TextBox Text="{Binding Isbn}" />
-
-            <TextBlock Text="Book publication year"/>
-            <TextBox Text="{Binding PublicationYear}" />
-
-            <TextBlock Text="Book genre"/>
-            <TextBox Text="{Binding Genre}" />
-
-            <Button Content="Register"
-                    Command="{Binding RegisterBookCommand}"/>
+                <Button Content="Edit"
+                        />
+            
         </StackPanel>
 
         <TableView Grid.Column="1"

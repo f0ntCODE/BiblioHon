@@ -3,13 +3,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="using:BiblioHon.ViewModels"
-        mc:Ignorable="d" d:DesignWidth="800"
-        x:Class="BiblioHon.Views.modals.add.RegisterBookDialog"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="570"
+        x:Class="BiblioHon.Views.modals.add.AddBookView"
         x:DataType="vm:BookViewModel"
-        Title="Register a book"
+        Title="Register new Book"
         CanResize="False"
+        WindowStartupLocation="CenterScreen"
         >
-
+  
         <Grid ShowGridLines="True"
         ColumnDefinitions="*">
 
@@ -23,10 +24,12 @@
                 VerticalAlignment="Center">
 
       <TextBlock
-        Text="Register Book"
+        Text="Add Book"
         TextAlignment="Center"
         />
     </StackPanel>
+
+    
 
     <StackPanel Grid.Row="1"
                 Orientation="Vertical"
@@ -41,24 +44,27 @@
       <Label Content="Book Author"
              Margin="0, 5"/>
       <TextBox PlaceholderText="Type book author"
-               Text="{Binding Author}" />
+               Text="{Binding Author}"/>
 
-               <!--PAREI AQUI-->
       <Label Content="Book Publisher"
              Margin="0, 5"/>
-      <TextBox PlaceholderText="Type book publisher" />
+      <TextBox PlaceholderText="Type book publisher"
+               Text="{Binding Publisher}" />
 
       <Label Content="Book ISBN"
              Margin="0, 5"/>
-      <TextBox PlaceholderText="Type book ISBN" />
+      <TextBox PlaceholderText="Type book ISBN"
+               Text="{Binding Isbn}" />
 
       <Label Content="Book publication year"
              Margin="0, 5"/>
-      <TextBox PlaceholderText="Type book publication year" />
+      <TextBox PlaceholderText="Type book publication year"
+               Text="{Binding PublicationYear}" />
 
       <Label Content="Book genre"
              Margin="0, 5"/>
-      <TextBox PlaceholderText="Type book genre" />
+      <TextBox PlaceholderText="Type book genre"
+               Text="{Binding Genre}" />
 
     </StackPanel>
       
@@ -70,23 +76,22 @@
   
         <Button 
               Content="Confirm" 
-              Cursor="Hand"
               HorizontalAlignment="Stretch"
               HorizontalContentAlignment="Center"
               Padding="10"
               Background="Green"
-              Foreground="LightGreen" />
+              Foreground="LightGreen"
+              Click="Confirm_Click" />
 
         <Button 
-              Content="Close"
+              Content="Cancel"
                 HorizontalAlignment="Center"
                 Cursor="Hand"
                 Padding="10"
                 Background="DarkRed"
-                Foreground="Red" />
+                Foreground="Red"
+                Click="Close_Click" />
 
     </StackPanel>
   </Grid>
-
-
-      </Window>
+</Window>

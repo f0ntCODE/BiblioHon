@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "l5Nis3/GcBE=",
+  "dgSpecHash": "HWXMeY3NyFw=",
   "success": true,
   "projectFilePath": "/home/font/projects/c_sharp/Large projects/LibraryDesktopSystem/BiblioHon/BiblioHon.csproj",
   "expectedPackageFiles": [
@@ -21,12 +21,14 @@
     "/home/font/.nuget/packages/avalonia.x11/12.1.4/avalonia.x11.12.1.4.nupkg.sha512",
     "/home/font/.nuget/packages/avaloniaui.diagnosticssupport/2.2.3/avaloniaui.diagnosticssupport.2.2.3.nupkg.sha512",
     "/home/font/.nuget/packages/communitytoolkit.mvvm/8.4.2/communitytoolkit.mvvm.8.4.2.nupkg.sha512",
+    "/home/font/.nuget/packages/dialoghost.avalonia/0.12.3/dialoghost.avalonia.0.12.3.nupkg.sha512",
     "/home/font/.nuget/packages/harfbuzzsharp/8.3.1.3/harfbuzzsharp.8.3.1.3.nupkg.sha512",
     "/home/font/.nuget/packages/harfbuzzsharp.nativeassets.linux/8.3.1.3/harfbuzzsharp.nativeassets.linux.8.3.1.3.nupkg.sha512",
     "/home/font/.nuget/packages/harfbuzzsharp.nativeassets.macos/8.3.1.3/harfbuzzsharp.nativeassets.macos.8.3.1.3.nupkg.sha512",
     "/home/font/.nuget/packages/harfbuzzsharp.nativeassets.webassembly/8.3.1.3/harfbuzzsharp.nativeassets.webassembly.8.3.1.3.nupkg.sha512",
     "/home/font/.nuget/packages/harfbuzzsharp.nativeassets.win32/8.3.1.3/harfbuzzsharp.nativeassets.win32.8.3.1.3.nupkg.sha512",
     "/home/font/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/font/.nuget/packages/messagebox.avalonia/12.1.0/messagebox.avalonia.12.1.0.nupkg.sha512",
     "/home/font/.nuget/packages/microcom.runtime/0.11.6/microcom.runtime.0.11.6.nupkg.sha512",
     "/home/font/.nuget/packages/microsoft.build.framework/18.0.2/microsoft.build.framework.18.0.2.nupkg.sha512",
     "/home/font/.nuget/packages/microsoft.codeanalysis.analyzers/3.11.0/microsoft.codeanalysis.analyzers.3.11.0.nupkg.sha512",

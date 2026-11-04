@@ -363,6 +363,22 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "DialogHost.Avalonia/0.12.3": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "12.0.0"
+        },
+        "compile": {
+          "lib/net8.0/DialogHost.Avalonia.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DialogHost.Avalonia.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "HarfBuzzSharp/8.3.1.3": {
         "type": "package",
         "dependencies": {
@@ -509,6 +525,19 @@
           "lib/net6.0/Humanizer.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "MessageBox.Avalonia/12.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "12.1.4",
+          "DialogHost.Avalonia": "0.12.3"
+        },
+        "compile": {
+          "lib/net10.0/MsBox.Avalonia.dll": {}
+        },
+        "runtime": {
+          "lib/net10.0/MsBox.Avalonia.dll": {}
         }
       },
       "MicroCom.Runtime/0.11.6": {
@@ -2092,6 +2121,21 @@
         "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
       ]
     },
+    "DialogHost.Avalonia/0.12.3": {
+      "sha512": "vKro74xGIqug59Ku/JO7Y+qdx8Z0DRvcDRbJvQYrnII1CEbaUPLvsd1tN59XomZnsrCi8DnTANXXDvldWJlENA==",
+      "type": "package",
+      "path": "dialoghost.avalonia/0.12.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dialoghost.avalonia.0.12.3.nupkg.sha512",
+        "dialoghost.avalonia.nuspec",
+        "icon.png",
+        "lib/net8.0/DialogHost.Avalonia.dll",
+        "lib/net8.0/DialogHost.Avalonia.xml"
+      ]
+    },
     "HarfBuzzSharp/8.3.1.3": {
       "sha512": "NGZ2+ZVNPM+NdHB/asW0/ykWngyHWwcqjrbN2nDeH1B/aptPGlCUl8wkQ2cSJxw5fdWgdmIPmNuTPWpLwNVXWg==",
       "type": "package",
@@ -2269,6 +2313,21 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "MessageBox.Avalonia/12.1.0": {
+      "sha512": "/D8IGHlxcQPs79OG8ua21/dvy3aN0jkZGUGTUwjxOQSjF3e4uicPNXFHTn7wtjIB9Pw0LPS9VZc4kFsvGziKgg==",
+      "type": "package",
+      "path": "messagebox.avalonia/12.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.jpg",
+        "lib/net10.0/MsBox.Avalonia.dll",
+        "lib/net11.0/MsBox.Avalonia.dll",
+        "lib/net8.0/MsBox.Avalonia.dll",
+        "messagebox.avalonia.12.1.0.nupkg.sha512",
+        "messagebox.avalonia.nuspec"
       ]
     },
     "MicroCom.Runtime/0.11.6": {
@@ -4458,6 +4517,7 @@
       "Avalonia.Themes.Fluent >= 12.1.4",
       "AvaloniaUI.DiagnosticsSupport >= 2.2.3",
       "CommunityToolkit.Mvvm >= 8.4.2",
+      "MessageBox.Avalonia >= 12.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.13",
       "Microsoft.EntityFrameworkCore.Sqlite >= 10.0.13",
       "Microsoft.Extensions.DependencyInjection >= 10.0.13"
@@ -4535,6 +4595,10 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.4.2, )"
+          },
+          "MessageBox.Avalonia": {
+            "target": "Package",
+            "version": "[12.1.0, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

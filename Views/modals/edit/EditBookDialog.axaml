@@ -3,7 +3,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="570"
-        x:Class="BiblioHon.Views.modals.EditBookView"
+        xmlns:vm="using:BiblioHon.ViewModels"
+        x:Class="BiblioHon.Views.modals.edit.EditBookView"
+        x:DataType="vm:BookViewModel"
         Title="Edit Book"
         CanResize="False"
         WindowStartupLocation="CenterOwner"
@@ -36,27 +38,27 @@
 
       <Label Content="Book Name"
              Margin="0, 5"/>
-      <TextBox PlaceholderText="Type book name" />
+      <TextBox PlaceholderText="Type book name" Text="{Binding BookName}" />
 
       <Label Content="Book Author"
              Margin="0, 5"/>
-      <TextBox PlaceholderText="Type book author" />
+      <TextBox PlaceholderText="Type book author" Text="{Binding Author}" />
 
       <Label Content="Book Publisher"
              Margin="0, 5"/>
-      <TextBox PlaceholderText="Type book publisher" />
+      <TextBox PlaceholderText="Type book publisher" Text="{Binding Publisher}" />
 
       <Label Content="Book ISBN"
              Margin="0, 5"/>
-      <TextBox PlaceholderText="Type book ISBN" />
+      <TextBox PlaceholderText="Type book ISBN" Text="{Binding Isbn}" />
 
       <Label Content="Book publication year"
              Margin="0, 5"/>
-      <TextBox PlaceholderText="Type book publication year" />
+      <TextBox PlaceholderText="Type book publication year" Text="{Binding PublicationYear}" />
 
       <Label Content="Book genre"
              Margin="0, 5"/>
-      <TextBox PlaceholderText="Type book genre" />
+      <TextBox PlaceholderText="Type book genre" Text="{Binding Genre}" />
 
     </StackPanel>
       
@@ -73,6 +75,7 @@
               HorizontalContentAlignment="Center"
               Padding="10"
               Background="Green"
+              Click="Save_Click"
               Foreground="LightGreen" />
 
         <Button 

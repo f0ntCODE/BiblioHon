@@ -54,7 +54,7 @@
       <Label Content="Book ISBN"
              Margin="0, 5"/>
       <TextBox PlaceholderText="Type book ISBN"
-               Text="{Binding Isbn}" />
+               Text="{Binding Isbn}"/>
 
       <Label Content="Book publication year"
              Margin="0, 5"/>

@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace BiblioHon.Models;
 
@@ -11,6 +13,9 @@ public class Book
     private int? _ISBN {get; set;}
     private int? _publicationYear {get; set;}
     private string _genre {get; set;} = String.Empty;
+
+    //relacionamentos
+    public ICollection<Copy> Copies {get; set;} = new List<Copy>();
 
     public Book(string BookName, 
     string Author,

@@ -4,16 +4,19 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 
 namespace BiblioHon.Models;
 
-public class Exemplar
+public class Copy
 {
 
     public long? Id {get; set;}
-    public long? BookId {get; set;}
     public string ConvervationStatus {get; set;} = String.Empty;
     public string Disponibility {get; set;} = String.Empty;
     public DateOnly CadastrationDate {get; set;}
 
-    public Exemplar(long? id,
+    //relationship
+    public long? BookId {get; set;}
+    public Book Book {get; set;}
+
+    public Copy(long? id,
                     string convervationStatus,
                     string disponibility,
                     DateOnly cadastrationDate)

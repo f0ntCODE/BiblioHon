@@ -11,10 +11,6 @@
         WindowState="Maximized"
         Title="BiblioHon Book Manager Window">
 
-    <Design.DataContext>
-        <vm:BookViewModelExample/>
-    </Design.DataContext>
-
     <Grid ShowGridLines="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
